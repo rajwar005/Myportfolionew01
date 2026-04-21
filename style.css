@@ -1,0 +1,116 @@
+/* Profile section ko row me lao */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* Layout */
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* Sidebar */
+.sidebar{
+    width:260px;
+    background:#020617;
+    padding:20px;
+    text-align:center;
+    border-right:1px solid #1e293b;
+}
+
+.profile img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    border:3px solid #38bdf8;
+}
+
+.profile h2{
+    margin-top:10px;
+}
+
+.role{
+    color:#38bdf8;
+    font-size:14px;
+}
+
+/* Info */
+.info{
+    margin-top:20px;
+    font-size:13px;
+    color:#94a3b8;
+}
+
+/* Main */
+.main{
+    flex:1;
+    padding:25px;
+}
+
+/* Card */
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* Skills */
+.skill{
+    margin:10px 0;
+}
+
+.bar{
+    height:8px;
+    background:#334155;
+    border-radius:10px;
+}
+
+.bar div{
+    height:100%;
+    background:#38bdf8;
+    border-radius:10px;
+}
+
+/* Projects */
+.projects{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.project{
+    background:#020617;
+    padding:15px;
+    border-radius:10px;
+    width:200px;
+    transition:0.3s;
+}
+
+.project:hover{
+    background:#334155;
+    transform:scale(1.05);
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .container{
+        flex-direction:column;
+    }
+    .sidebar{
+        width:100%;
+    }
+}
